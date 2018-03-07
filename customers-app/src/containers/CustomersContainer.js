@@ -9,11 +9,12 @@ import { getCustomers } from '../selectors/customers'
 import PropTypes from 'prop-types'
 
 
-
-
 class CustomersContainer extends Component {
 	componentDidMount() {
-		this.props.fetchCustomers()
+		if (this.props.customers.length() === 0) {
+			this.props.fetchCustomers()
+		}
+
 	}
 
 	handleAddNew = () => {
@@ -47,11 +48,11 @@ CustomersContainer.propTypes = {
 }
 
 CustomersContainer.defaultProps = {
-	customers : [ ]
+	customers: []
 }
 
 const mapStateToProps = state => ({
 	customers: getCustomers(state)
 })
 
-export default withRouter(connect(mapStateToProps, { fetchCustomers })(CustomersContainer))
+export default withRouter(connect(mapStateToProps, {fetchCustomers})(CustomersContainer))

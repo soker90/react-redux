@@ -31,7 +31,6 @@ class CustomersContainer extends Component {
 	)
 
 	render() {
-		console.log(this)
 		return (
 			<div>
 				<AppFrame header={'Listado de clientes'}

@@ -9,21 +9,22 @@ import CustomerData from '../components/CustomerData'
 import { fetchCustomers } from '../actions/fetchCustomers'
 import { updateCustomer } from '../actions/updateCustomers'
 import { SubmissionError } from 'redux-form'
+import { deleteCustomer } from '../actions/deleteCustomer'
 
 
 class CustomerContainer extends Component {
 
 	componentDidMount() {
-		if(!this.props.customer) {
+		if (!this.props.customer) {
 			this.props.fetchCustomers()
 
 		}
 	}
 
 	handleSubmit = values => {
-		const { id } = values
-		return this.props.updateCustomer(id, values).then( r => {
-			if(r.error) {
+		const {id} = values
+		return this.props.updateCustomer(id, values).then(r => {
+			if (r.error) {
 				throw new SubmissionError(r.payload)
 			}
 		})
@@ -37,21 +38,35 @@ class CustomerContainer extends Component {
 		this.props.history.goBack()
 	}
 
+	handleDelete = id => {
+		this.props.deleteCustomer(id).then( () => {
+			this.props.history.goBack()
+		})
+	}
+
+	renderCustomerControl = (isEdit, isDelete) => {
+		if (this.props.customer) {
+			const CustomerControl = isEdit ? CustomerEdit : CustomerData
+
+			return <CustomerControl {...this.props.customer}
+			                        onSubmit={this.handleSubmit}
+			                        onSubmitSuccess={this.handleSubmitSuccess}
+			                        onBack={this.handleOnBack}
+			                        isDeleteAllow={!!isDelete}
+			                        onDelete={this.handleDelete}
+			/>
+		}
+		return null
+	}
+
 	renderBody = () => (
 		<Route path='/customers/:dni/edit' children={
-			({match}) => {
-				if (this.props.customer) {
-					const CustomerControl = match ? CustomerEdit : CustomerData
-
-					return <CustomerControl {...this.props.customer}
-					                        onSubmit={this.handleSubmit}
-					                        onSubmitSuccess={this.handleSubmitSuccess}
-					                        onBack={this.handleOnBack}/>
-				}
-				return null
-			}
+			({match: isEdit}) => (
+				<Route path='/customers/:dni/del' children= {
+					({ match: isDelete } ) => (
+					this.renderCustomerControl(isEdit, isDelete))
+				}/>)
 		}/>
-
 	)
 
 
@@ -79,5 +94,6 @@ const mapStateToProps = (state, props) => ({
 
 export default withRouter(connect(mapStateToProps, {
 	fetchCustomers,
-	updateCustomer
+	updateCustomer,
+	deleteCustomer
 })(CustomerContainer))

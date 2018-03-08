@@ -3,8 +3,8 @@
     {
       "id": "500000",
       "dni": "500000",
-      "name": "LA PRUEBAC",
-      "age": 402
+      "name": "CARLOS SANCHEZ31WA",
+      "age": 46
     },
     {
       "dni": "6868686",
@@ -13,22 +13,10 @@
       "id": "XSCfaW5"
     },
     {
-      "name": "DOS",
+      "name": "NUEVO CLIENTE 1",
       "dni": "99999",
       "age": 11,
       "id": "kxmVQVd"
-    },
-    {
-      "name": "DFGDFGD",
-      "dni": "333",
-      "age": 5,
-      "id": "6ZgA1~Q"
-    },
-    {
-      "id": "s8oHw7u",
-      "dni": "ffff",
-      "name": "DDDD",
-      "age": 2
     }
   ],
   "posts": [

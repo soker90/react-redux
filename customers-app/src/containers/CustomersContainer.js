@@ -11,7 +11,7 @@ import PropTypes from 'prop-types'
 
 class CustomersContainer extends Component {
 	componentDidMount() {
-		if (this.props.customers.length() === 0) {
+		if (this.props.customers.length === 0) {
 			this.props.fetchCustomers()
 		}
 

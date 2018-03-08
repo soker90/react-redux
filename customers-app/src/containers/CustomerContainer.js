@@ -22,7 +22,7 @@ class CustomerContainer extends Component {
 
 	handleSubmit = values => {
 		const { id } = values
-		return this.props.updateCustomer(id, values).then( r =>{
+		return this.props.updateCustomer(id, values).then( r => {
 			if(r.error) {
 				throw new SubmissionError(r.payload)
 			}
@@ -69,7 +69,8 @@ class CustomerContainer extends Component {
 CustomerContainer.propTypes = {
 	dni: PropTypes.string.isRequired,
 	customer: PropTypes.object,
-	updateCustomer: PropTypes.func.isRequired
+	fetchCustomers: PropTypes.func.isRequired,
+	updateCustomer: PropTypes.func.isRequired,
 }
 
 const mapStateToProps = (state, props) => ({

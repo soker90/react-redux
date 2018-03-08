@@ -17,7 +17,7 @@ class HomeContainer extends Component {
 					body={
 						<div>
 							<img
-								src="https://lh6.googleusercontent.com/C0YXQ2ZHuvYkB2GEA4OfkzlBkU56stTvOxeJCQQGaFameldhTRQtzilAcMRveF4SwL3Xfw1muoPE7g=w1360-h677-rw"
+								src="https://udemy-images.udemy.com/course/750x422/1374394_f1a8_2.jpg"
 								alt=""/> <CustomersActions>
 							<button onClick={this.handleOnClick}>Listado de clientes</button>
 						</CustomersActions>

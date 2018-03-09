@@ -10,7 +10,8 @@ export default function (beer) {
     },
     body: JSON.stringify({
       name: beer.name,
-      graduation: beer.graduation
+      graduation: beer.graduation,
+      price: beer.price
     })
   })
     .then(response => {

@@ -16,7 +16,7 @@ app.get('/api/beers', (req, res) => {
   setTimeout(() => res.json({beers}), 2000)
 })
 app.post('/api/beers', (req, res) => {
-  const beer = {id: 'beer_' + beers.length + 1, name: req.body.name, graduation: req.body.graduation}
+  const beer = {id: 'beer_' + beers.length + 1, name: req.body.name, graduation: req.body.graduation, price: req.body.price}
   beers.push(beer)
   setTimeout(() => res.json(beer), 2000)
 })

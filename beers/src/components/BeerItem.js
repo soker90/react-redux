@@ -8,7 +8,7 @@ class BeerItem extends Component {
     return (
       <div>
         <p>
-          <b>{beer.name}</b> ({beer.graduation}%) <i>{beer.id}</i>
+          <b>{beer.name}</b> ({beer.graduation}%) - {beer.price}€ - <i>{beer.id}</i>
         </p>
         <div>
           <button onClick={onRemove} disabled={this.props.loading}>{btnText}</button>

@@ -1,0 +1,165 @@
+exports[`Beer component render Beer component with beers 1`] = `
+<div
+  className="beer">
+  <div>
+    <form
+      action="#"
+      onSubmit={[Function]}>
+      <input
+        required="required"
+        type="text" />
+      <input
+        required="required"
+        type="text" />
+      <input
+        disabled={false}
+        type="submit"
+        value="Add Beer" />
+    </form>
+  </div>
+  <div>
+    <div>
+      <p>
+        <b>
+          Amstel
+        </b>
+         (
+        5
+        %) 
+        <i>
+          beer_01
+        </i>
+      </p>
+      <div>
+        <button
+          disabled={false}
+          onClick={[Function]}>
+          Remove Beer
+        </button>
+      </div>
+    </div>
+    <div>
+      <p>
+        <b>
+          Mahoo
+        </b>
+         (
+        3
+        %) 
+        <i>
+          beer_02
+        </i>
+      </p>
+      <div>
+        <button
+          disabled={false}
+          onClick={[Function]}>
+          Remove Beer
+        </button>
+      </div>
+    </div>
+    <div>
+      <p>
+        <b>
+          Corona
+        </b>
+         (
+        4,5
+        %) 
+        <i>
+          beer_03
+        </i>
+      </p>
+      <div>
+        <button
+          disabled={false}
+          onClick={[Function]}>
+          Remove Beer
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Beer component render Beer component with error 1`] = `
+<div
+  className="beer">
+  <div>
+    <form
+      action="#"
+      onSubmit={[Function]}>
+      <input
+        required="required"
+        type="text" />
+      <input
+        required="required"
+        type="text" />
+      <input
+        disabled={false}
+        type="submit"
+        value="Add Beer" />
+    </form>
+  </div>
+  <p
+    className="beer-error">
+     An beer error occurred: 
+    Unauthorized
+    : 
+    401
+  </p>
+  <p>
+    The beer list is empty
+  </p>
+</div>
+`;
+
+exports[`Beer component render Beer component with loading true 1`] = `
+<div
+  className="beer">
+  <div>
+    <form
+      action="#"
+      onSubmit={[Function]}>
+      <input
+        required="required"
+        type="text" />
+      <input
+        required="required"
+        type="text" />
+      <input
+        disabled={true}
+        type="submit"
+        value="Loading..." />
+    </form>
+  </div>
+  <p>
+    The beer list is empty
+  </p>
+</div>
+`;
+
+exports[`Beer component render Beer component without crashing 1`] = `
+<div
+  className="beer">
+  <div>
+    <form
+      action="#"
+      onSubmit={[Function]}>
+      <input
+        required="required"
+        type="text" />
+      <input
+        required="required"
+        type="text" />
+      <input
+        disabled={false}
+        type="submit"
+        value="Add Beer" />
+    </form>
+  </div>
+  <p>
+    The beer list is empty
+  </p>
+</div>
+`;

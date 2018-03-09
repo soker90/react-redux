@@ -1,0 +1,129 @@
+exports[`BeerList component render BeerItem component with loading true 1`] = `
+<div>
+  <div>
+    <p>
+      <b>
+        Amstel
+      </b>
+       (
+      5
+      %) 
+      <i>
+        beer_01
+      </i>
+    </p>
+    <div>
+      <button
+        disabled={true}
+        onClick={[Function]}>
+        Loading...
+      </button>
+    </div>
+  </div>
+  <div>
+    <p>
+      <b>
+        Mahoo
+      </b>
+       (
+      3
+      %) 
+      <i>
+        beer_02
+      </i>
+    </p>
+    <div>
+      <button
+        disabled={true}
+        onClick={[Function]}>
+        Loading...
+      </button>
+    </div>
+  </div>
+  <div>
+    <p>
+      <b>
+        Corona
+      </b>
+       (
+      4,5
+      %) 
+      <i>
+        beer_03
+      </i>
+    </p>
+    <div>
+      <button
+        disabled={true}
+        onClick={[Function]}>
+        Loading...
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BeerList component render BeerItem component without crashing 1`] = `
+<div>
+  <div>
+    <p>
+      <b>
+        Amstel
+      </b>
+       (
+      5
+      %) 
+      <i>
+        beer_01
+      </i>
+    </p>
+    <div>
+      <button
+        disabled={false}
+        onClick={[Function]}>
+        Remove Beer
+      </button>
+    </div>
+  </div>
+  <div>
+    <p>
+      <b>
+        Mahoo
+      </b>
+       (
+      3
+      %) 
+      <i>
+        beer_02
+      </i>
+    </p>
+    <div>
+      <button
+        disabled={false}
+        onClick={[Function]}>
+        Remove Beer
+      </button>
+    </div>
+  </div>
+  <div>
+    <p>
+      <b>
+        Corona
+      </b>
+       (
+      4,5
+      %) 
+      <i>
+        beer_03
+      </i>
+    </p>
+    <div>
+      <button
+        disabled={false}
+        onClick={[Function]}>
+        Remove Beer
+      </button>
+    </div>
+  </div>
+</div>
+`;

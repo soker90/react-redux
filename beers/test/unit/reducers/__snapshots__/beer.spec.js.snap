@@ -1,0 +1,82 @@
+exports[`Beer reducer addBeer method should handle show loading 1`] = `
+Object {
+  "beer": Object {},
+  "beerList": Array [],
+  "error": null,
+  "loading": true,
+}
+`;
+
+exports[`Beer reducer addBeerSuccess method should handle hide loading and add beer 1`] = `
+Object {
+  "beer": Object {},
+  "beerList": Array [
+    Object {
+      "graduation": "5",
+      "id": "beer_01",
+      "name": "Amstel",
+    },
+  ],
+  "error": null,
+  "loading": false,
+}
+`;
+
+exports[`Beer reducer fetchBeer method should handle show loading 1`] = `
+Object {
+  "beerList": Array [],
+  "error": null,
+  "loading": true,
+}
+`;
+
+exports[`Beer reducer fetchBeerSuccess method should handle hide loading and load beers 1`] = `
+Object {
+  "beer": Object {},
+  "beerList": undefined,
+  "error": null,
+  "loading": false,
+}
+`;
+
+exports[`Beer reducer removeBeer method should handle show loading 1`] = `
+Object {
+  "beer": Object {},
+  "beerList": Array [],
+  "error": null,
+  "loading": true,
+}
+`;
+
+exports[`Beer reducer removeBeerSuccess method should handle hide loading and remove beer 1`] = `
+Object {
+  "beerList": Array [
+    Object {
+      "graduation": "5",
+      "id": "beer_01",
+      "name": "Amstel",
+    },
+    Object {
+      "graduation": "3",
+      "id": "beer_02",
+      "name": "Mahoo",
+    },
+    Object {
+      "graduation": "4,5",
+      "id": "beer_03",
+      "name": "Corona",
+    },
+  ],
+  "error": null,
+  "loading": false,
+}
+`;
+
+exports[`Beer reducer should handle initial state 1`] = `
+Object {
+  "beer": Object {},
+  "beerList": Array [],
+  "error": null,
+  "loading": false,
+}
+`;

@@ -1,0 +1,9 @@
+export default {
+  beer: {name: 'Amstel', graduation: '5', id: 'beer_01'},
+  beers: [
+    {name: 'Amstel', graduation: '5', id: 'beer_01'},
+    {name: 'Mahoo', graduation: '3', id: 'beer_02'},
+    {name: 'Corona', graduation: '4,5', id: 'beer_03'}
+  ],
+  beerId: 'beer_01'
+}

@@ -1,0 +1,12 @@
+exports[`modal actions closeModal 1`] = `
+Object {
+  "type": "CLOSE_MODAL",
+}
+`;
+
+exports[`modal actions openModal 1`] = `
+Object {
+  "modalData": undefined,
+  "type": "OPEN_MODAL",
+}
+`;

@@ -1,0 +1,235 @@
+exports[`Beer saga addBeer error 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      Object {
+        "graduation": "5",
+        "id": "beer_01",
+        "name": "Amstel",
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`Beer saga addBeer error 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "PUT": Object {
+    "action": Object {
+      "error": Object {
+        "message": "error",
+      },
+      "type": "BEER_ERROR",
+    },
+    "channel": null,
+  },
+}
+`;
+
+exports[`Beer saga addBeer error 3`] = `true`;
+
+exports[`Beer saga addBeer success 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      Object {
+        "graduation": "5",
+        "id": "beer_01",
+        "name": "Amstel",
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`Beer saga addBeer success 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "PUT": Object {
+    "action": Object {
+      "beer": undefined,
+      "type": "ADD_BEER_SUCCESS",
+    },
+    "channel": null,
+  },
+}
+`;
+
+exports[`Beer saga addBeer success 3`] = `true`;
+
+exports[`Beer saga fetchBeer error 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`Beer saga fetchBeer error 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "PUT": Object {
+    "action": Object {
+      "error": Object {
+        "message": "error",
+      },
+      "type": "BEER_ERROR",
+    },
+    "channel": null,
+  },
+}
+`;
+
+exports[`Beer saga fetchBeer error 3`] = `true`;
+
+exports[`Beer saga fetchBeer success 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`Beer saga fetchBeer success 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "PUT": Object {
+    "action": Object {
+      "beers": Array [
+        Object {
+          "graduation": "5",
+          "id": "beer_01",
+          "name": "Amstel",
+        },
+        Object {
+          "graduation": "3",
+          "id": "beer_02",
+          "name": "Mahoo",
+        },
+        Object {
+          "graduation": "4,5",
+          "id": "beer_03",
+          "name": "Corona",
+        },
+      ],
+      "type": "FETCH_BEER_SUCCESS",
+    },
+    "channel": null,
+  },
+}
+`;
+
+exports[`Beer saga fetchBeer success 3`] = `true`;
+
+exports[`Beer saga removeBeer error 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "beer_01",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`Beer saga removeBeer error 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "PUT": Object {
+    "action": Object {
+      "error": Object {
+        "message": "error",
+      },
+      "type": "BEER_ERROR",
+    },
+    "channel": null,
+  },
+}
+`;
+
+exports[`Beer saga removeBeer error 3`] = `true`;
+
+exports[`Beer saga removeBeer success 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "beer_01",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`Beer saga removeBeer success 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "PUT": Object {
+    "action": Object {
+      "beerId": "beer_01",
+      "type": "REMOVE_BEER_SUCCESS",
+    },
+    "channel": null,
+  },
+}
+`;
+
+exports[`Beer saga removeBeer success 3`] = `true`;
+
+exports[`Beer saga should trigger on every ADD_BEER action 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "FORK": Object {
+    "args": Array [
+      "ADD_BEER",
+      [Function],
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`Beer saga should trigger on every BEER_FETCH action 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "FORK": Object {
+    "args": Array [
+      "FETCH_BEER",
+      [Function],
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`Beer saga should trigger on every REMOVE_BEER action 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "FORK": Object {
+    "args": Array [
+      "REMOVE_BEER",
+      [Function],
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;

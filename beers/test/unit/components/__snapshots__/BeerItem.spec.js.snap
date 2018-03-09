@@ -1,0 +1,45 @@
+exports[`BeerItem component render BeerItem component with loading true 1`] = `
+<div>
+  <p>
+    <b>
+      Amstel
+    </b>
+     (
+    5
+    %) 
+    <i>
+      beer_01
+    </i>
+  </p>
+  <div>
+    <button
+      disabled={true}
+      onClick={[Function]}>
+      Loading...
+    </button>
+  </div>
+</div>
+`;
+
+exports[`BeerItem component render BeerItem component without crashing 1`] = `
+<div>
+  <p>
+    <b>
+      Amstel
+    </b>
+     (
+    5
+    %) 
+    <i>
+      beer_01
+    </i>
+  </p>
+  <div>
+    <button
+      disabled={false}
+      onClick={[Function]}>
+      Remove Beer
+    </button>
+  </div>
+</div>
+`;

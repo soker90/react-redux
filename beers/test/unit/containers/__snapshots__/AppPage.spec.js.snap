@@ -1,0 +1,20 @@
+exports[`Containers should map AppPage actions to props 1`] = `
+Object {
+  "modalAction": Object {
+    "closeModal": [Function],
+    "openModal": [Function],
+  },
+}
+`;
+
+exports[`Containers should map AppPage state to props 1`] = `
+Object {
+  "modal": Object {
+    "body": "",
+    "callback": null,
+    "extraParams": Object {},
+    "open": false,
+    "title": "",
+  },
+}
+`;

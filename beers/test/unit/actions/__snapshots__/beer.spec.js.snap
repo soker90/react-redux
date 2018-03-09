@@ -1,0 +1,48 @@
+exports[`Beer action addBeer 1`] = `
+Object {
+  "graduation": undefined,
+  "name": undefined,
+  "type": "ADD_BEER",
+}
+`;
+
+exports[`Beer action addBeerSuccess 1`] = `
+Object {
+  "beer": undefined,
+  "type": "ADD_BEER_SUCCESS",
+}
+`;
+
+exports[`Beer action beerError 1`] = `
+Object {
+  "error": undefined,
+  "type": "BEER_ERROR",
+}
+`;
+
+exports[`Beer action fetchBeer 1`] = `
+Object {
+  "type": "FETCH_BEER",
+}
+`;
+
+exports[`Beer action fetchBeerSuccess 1`] = `
+Object {
+  "beers": undefined,
+  "type": "FETCH_BEER_SUCCESS",
+}
+`;
+
+exports[`Beer action removeBeer 1`] = `
+Object {
+  "beerId": undefined,
+  "type": "REMOVE_BEER",
+}
+`;
+
+exports[`Beer action removeBeerSuccess 1`] = `
+Object {
+  "beerId": undefined,
+  "type": "REMOVE_BEER_SUCCESS",
+}
+`;

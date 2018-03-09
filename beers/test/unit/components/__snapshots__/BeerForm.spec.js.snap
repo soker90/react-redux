@@ -1,0 +1,37 @@
+exports[`BeerForm component render BeerForm component with loading true 1`] = `
+<div>
+  <form
+    action="#"
+    onSubmit={[Function]}>
+    <input
+      required="required"
+      type="text" />
+    <input
+      required="required"
+      type="text" />
+    <input
+      disabled={true}
+      type="submit"
+      value="Loading..." />
+  </form>
+</div>
+`;
+
+exports[`BeerForm component render BeerForm component without crashing 1`] = `
+<div>
+  <form
+    action="#"
+    onSubmit={[Function]}>
+    <input
+      required="required"
+      type="text" />
+    <input
+      required="required"
+      type="text" />
+    <input
+      disabled={false}
+      type="submit"
+      value="Add Beer" />
+  </form>
+</div>
+`;

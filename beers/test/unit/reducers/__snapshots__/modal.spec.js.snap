@@ -1,0 +1,29 @@
+exports[`Modal reducer closeModal method should handle close modal and reset params 1`] = `
+Object {
+  "body": "",
+  "callback": null,
+  "extraParams": Object {},
+  "open": false,
+  "title": "",
+}
+`;
+
+exports[`Modal reducer openModal method should handle open modal and set params 1`] = `
+Object {
+  "body": "This is the modal body text",
+  "callback": [Function],
+  "extraParams": Object {},
+  "open": true,
+  "title": "Hey a modal title",
+}
+`;
+
+exports[`Modal reducer should handle initial state 1`] = `
+Object {
+  "body": "",
+  "callback": null,
+  "extraParams": Object {},
+  "open": false,
+  "title": "",
+}
+`;

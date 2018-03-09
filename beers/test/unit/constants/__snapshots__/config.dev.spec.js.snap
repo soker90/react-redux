@@ -1,0 +1,5 @@
+exports[`Config DEV constants exist 1`] = `
+Object {
+  "API_URL": "http://localhost:3001/api",
+}
+`;

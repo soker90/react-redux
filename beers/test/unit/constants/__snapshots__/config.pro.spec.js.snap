@@ -1,0 +1,5 @@
+exports[`Config PRO constants exist 1`] = `
+Object {
+  "API_URL": "http://myservicesdomain.com/api",
+}
+`;

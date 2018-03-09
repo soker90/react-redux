@@ -1,0 +1,37 @@
+exports[`App component render App component without crashing 1`] = `
+<div
+  className="app">
+  <div
+    className="app-header">
+    <img
+      alt="logo"
+      className="app-logo"
+      src="logo.svg" />
+    <h2>
+      Welcome to BeersApp
+    </h2>
+  </div>
+  <nav>
+    <ul>
+      <li>
+        <a
+          href="/beers"
+          onClick={[Function]}>
+          Beers
+        </a>
+      </li>
+      <li>
+        <a
+          href="/about"
+          onClick={[Function]}>
+          About
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <button
+    onClick={[Function]}>
+    Open Modal
+  </button>
+</div>
+`;

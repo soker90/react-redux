@@ -1,0 +1,6 @@
+exports[`Modal constants exist 1`] = `
+Object {
+  "CLOSE_MODAL": "CLOSE_MODAL",
+  "OPEN_MODAL": "OPEN_MODAL",
+}
+`;

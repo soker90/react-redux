@@ -1,0 +1,8 @@
+.beer {
+  position: relative;
+  padding: 15px;
+}
+
+.beer-error {
+  color: red;
+}
